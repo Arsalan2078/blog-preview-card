@@ -92,10 +92,10 @@ meter {
   --color-primary-yellow: hsl(47, 88%, 63%);
   --color-neutral-white: hsl(0, 0%, 100%);
   --color-neutral-gray-500: hsl(0, 0%, 42%);
-  --color-neutral-gray-900: hsl(0, 0%, 7%);
-  --font-size-350: 0.875rem;
-  --font-size-400: 1rem;
-  --font-size-600: 1.5rem;
+  --color-neutral-gray-950: hsl(0, 0%, 7%);
+  --font-size-350: 0.75rem;
+  --font-size-400: 0.875rem;
+  --font-size-600: 1.25rem;
   --font-weight-500: 500;
   --font-weight-800: 800;
   --letter-spacing-0: 0px;
@@ -120,7 +120,7 @@ meter {
     --font-size-600: 1.5rem;
   }
 }
-.text-preset-1 {
+.text-preset-1, .card .content .title {
   font-family: "Figtree", sans-serif;
   font-size: var(--font-size-600);
   font-weight: var(--font-weight-800);
@@ -128,7 +128,7 @@ meter {
   line-height: var(--line-height-150);
 }
 
-.text-preset-2 {
+.text-preset-2, .card .content .description {
   font-family: "Figtree", sans-serif;
   font-size: var(--font-size-400);
   font-weight: var(--font-weight-500);
@@ -136,7 +136,7 @@ meter {
   line-height: var(--line-height-150);
 }
 
-.text-preset-3 {
+.text-preset-3, .card .content .publish-date {
   font-family: "Figtree", sans-serif;
   font-size: var(--font-size-350);
   font-weight: var(--font-weight-500);
@@ -144,7 +144,7 @@ meter {
   line-height: var(--line-height-150);
 }
 
-.text-preset-3-bold {
+.text-preset-3-bold, .card .content .category, .card .author .author-name {
   font-family: "Figtree", sans-serif;
   font-size: var(--font-size-350);
   font-weight: var(--font-weight-800);
@@ -230,19 +230,64 @@ b {
   font-weight: bold;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0;
-  width: min(100% - 0rem, 90rem);
+html {
+  height: 100%;
 }
 
-.flex {
+body {
+  height: inherit;
+}
+
+#root {
+  height: inherit;
+  background-color: var(--color-primary-yellow);
   display: flex;
-  gap: var(--gap, 1rem);
+  justify-content: center;
+  align-items: center;
 }
 
-.grid {
+.card {
+  flex-basis: 24rem;
+  margin: var(--spacing-300);
+  border: 1px solid var(--color-neutral-gray-950);
+  border-radius: 1.25rem;
+  padding: var(--spacing-300);
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-gray-950);
+  box-shadow: 0.5rem 0.5rem var(--color-neutral-gray-950);
   display: grid;
+  gap: var(--spacing-300);
+}
+.card .blog-image {
+  border-radius: 0.625rem;
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+}
+.card .content {
+  display: grid;
+  gap: var(--spacing-150);
+}
+.card .content .category {
+  justify-self: start;
+  border-radius: 0.25rem;
+  padding: var(--spacing-50) var(--spacing-100);
+  background-color: var(--color-primary-yellow);
+}
+.card .content .title:hover {
+  color: var(--color-primary-yellow);
+}
+.card .content .description {
+  color: var(--color-neutral-gray-500);
+}
+.card .author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150);
+}
+.card .author .author-pic {
+  width: 2rem;
+  height: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
