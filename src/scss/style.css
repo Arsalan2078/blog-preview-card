@@ -1,0 +1,297 @@
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+a, button {
+  cursor: revert;
+}
+
+ol, ul, menu, summary {
+  list-style: none;
+}
+
+ol {
+  counter-reset: revert;
+}
+
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+textarea {
+  white-space: revert;
+}
+
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::-moz-placeholder {
+  color: unset;
+}
+
+::placeholder {
+  color: unset;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree/Figtree-VariableFont_wght.ttf");
+  font-weight: 500, 800;
+}
+:root {
+  --color-primary-yellow: hsl(47, 88%, 63%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-gray-500: hsl(0, 0%, 42%);
+  --color-neutral-gray-950: hsl(0, 0%, 7%);
+  --font-size-350: 0.75rem;
+  --font-size-400: 0.875rem;
+  --font-size-600: 1.25rem;
+  --font-weight-500: 500;
+  --font-weight-800: 800;
+  --letter-spacing-0: 0px;
+  --line-height-150: 150%;
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-150: 0.75rem;
+  --spacing-300: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --font-size-350: 0.875rem;
+    --font-size-400: 1rem;
+    --font-size-600: 1.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  :root {
+    --font-size-350: 0.875rem;
+    --font-size-400: 1rem;
+    --font-size-600: 1.5rem;
+  }
+}
+.text-preset-1, .card .content .title {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--font-size-600);
+  font-weight: var(--font-weight-800);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+.text-preset-2, .card .content .description {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+.text-preset-3, .card .content .publish-date {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--font-size-350);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+.text-preset-3-bold, .card .content .category, .card .author .author-name {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--font-size-350);
+  font-weight: var(--font-weight-800);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+h1 {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+h2 {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+h3 {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+h4 {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+h5 {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+h6 {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+p,
+li,
+label,
+td {
+  font-family: "Figtree", sans-serif;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+}
+
+#root {
+  height: inherit;
+  background-color: var(--color-primary-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  flex-basis: 24rem;
+  margin: var(--spacing-300);
+  border: 1px solid var(--color-neutral-gray-950);
+  border-radius: 1.25rem;
+  padding: var(--spacing-300);
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-gray-950);
+  box-shadow: 0.5rem 0.5rem var(--color-neutral-gray-950);
+  display: grid;
+  gap: var(--spacing-300);
+}
+.card .blog-image {
+  border-radius: 0.625rem;
+  width: 100%;
+  height: 12.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .content {
+  display: grid;
+  gap: var(--spacing-150);
+}
+.card .content .category {
+  justify-self: start;
+  border-radius: 0.25rem;
+  padding: var(--spacing-50) var(--spacing-100);
+  background-color: var(--color-primary-yellow);
+}
+.card .content .title:hover {
+  color: var(--color-primary-yellow);
+}
+.card .content .description {
+  color: var(--color-neutral-gray-500);
+}
+.card .author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150);
+}
+.card .author .author-pic {
+  width: 2rem;
+  height: 2rem;
+}/*# sourceMappingURL=style.css.map */
