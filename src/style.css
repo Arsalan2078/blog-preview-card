@@ -83,96 +83,128 @@ meter {
   display: none;
 }
 
-h1 {
-  font-family: inherit;
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree/Figtree-VariableFont_wght.ttf");
+  font-weight: 500, 800;
+}
+:root {
+  --color-primary-yellow: hsl(47, 88%, 63%);
+  --color-neutral-: ;
+  --font-size-350: 0.875rem;
+  --font-size-400: 1rem;
+  --font-size-600: 1.5rem;
+  --font-weight-500: 500;
+  --font-weight-800: 800;
+  --letter-spacing-0: 0px;
+  --line-height-150: 150%;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --font-size-350: 0.875rem;
+    --font-size-400: 1rem;
+    --font-size-600: 1.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  :root {
+    --font-size-350: 0.875rem;
+    --font-size-400: 1rem;
+    --font-size-600: 1.5rem;
+  }
+}
+.text-preset-1 {
+  font-family: "Figtree";
+  font-size: var(--font-size-600);
+  font-weight: var(--font-weight-800);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+.text-preset-2 {
+  font-family: "Figtree";
   font-size: var(--font-size-400);
-  font-weight: var(--font-weight-400);
-  letter-spacing: var(--letter-spacing-000);
-  line-height: var(--line-height-200);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+.text-preset-3 {
+  font-family: "Figtree";
+  font-size: var(--font-size-350);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+.text-preset-3-bold {
+  font-family: "Figtree";
+  font-size: var(--font-size-350);
+  font-weight: var(--font-weight-800);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
+}
+
+h1 {
+  font-family: "Figtree";
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
 }
 
 h2 {
-  font-family: inherit;
+  font-family: "Figtree";
   font-size: var(--font-size-400);
-  font-weight: var(--font-weight-400);
-  letter-spacing: var(--letter-spacing-000);
-  line-height: var(--line-height-200);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
 }
 
 h3 {
-  font-family: inherit;
+  font-family: "Figtree";
   font-size: var(--font-size-400);
-  font-weight: var(--font-weight-400);
-  letter-spacing: var(--letter-spacing-000);
-  line-height: var(--line-height-200);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
 }
 
 h4 {
-  font-family: inherit;
+  font-family: "Figtree";
   font-size: var(--font-size-400);
-  font-weight: var(--font-weight-400);
-  letter-spacing: var(--letter-spacing-000);
-  line-height: var(--line-height-200);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
 }
 
 h5 {
-  font-family: inherit;
+  font-family: "Figtree";
   font-size: var(--font-size-400);
-  font-weight: var(--font-weight-400);
-  letter-spacing: var(--letter-spacing-000);
-  line-height: var(--line-height-200);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
 }
 
 h6 {
-  font-family: inherit;
+  font-family: "Figtree";
   font-size: var(--font-size-400);
-  font-weight: var(--font-weight-400);
-  letter-spacing: var(--letter-spacing-000);
-  line-height: var(--line-height-200);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
 }
 
 p,
 li,
 label,
 td {
-  font-family: inherit;
+  font-family: "Figtree";
   font-size: var(--font-size-400);
-  font-weight: var(--font-weight-400);
-  letter-spacing: var(--letter-spacing-000);
-  line-height: var(--line-height-200);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing-0);
+  line-height: var(--line-height-150);
 }
 
-:root {
-  --color-primary-yellow: hsl(60, 100%, 50%);
-  --color-primary-blue: hsl(240, 100%, 50%);
-  --color-neutral-: ;
-  --font-size-400: 1rem;
-  --font-weight-100: 100;
-  --font-weight-200: 200;
-  --font-weight-300: 300;
-  --font-weight-400: 400;
-  --font-weight-500: 500;
-  --font-weight-600: 600;
-  --font-weight-700: 700;
-  --font-weight-800: 800;
-  --font-weight-900: 900;
-  --letter-spacing-0: 0px;
-  --letter-spacing-100: 1px;
-  --line-height-100: 100%;
-  --line-height-150: 150%;
-  --line-height-200: 200%;
-}
-
-@media screen and (min-width: 768px) {
-  :root {
-    --font-size-400: 1.1rem;
-  }
-}
-@media screen and (min-width: 1440px) {
-  :root {
-    --font-size-400: 1.2rem;
-  }
-}
 img {
   display: block;
   max-width: 100%;
