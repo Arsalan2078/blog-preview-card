@@ -90,7 +90,9 @@ meter {
 }
 :root {
   --color-primary-yellow: hsl(47, 88%, 63%);
-  --color-neutral-: ;
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-gray-500: hsl(0, 0%, 42%);
+  --color-neutral-gray-900: hsl(0, 0%, 7%);
   --font-size-350: 0.875rem;
   --font-size-400: 1rem;
   --font-size-600: 1.5rem;
@@ -98,6 +100,10 @@ meter {
   --font-weight-800: 800;
   --letter-spacing-0: 0px;
   --line-height-150: 150%;
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-150: 0.75rem;
+  --spacing-300: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -115,7 +121,7 @@ meter {
   }
 }
 .text-preset-1 {
-  font-family: "Figtree";
+  font-family: "Figtree", sans-serif;
   font-size: var(--font-size-600);
   font-weight: var(--font-weight-800);
   letter-spacing: var(--letter-spacing-0);
@@ -123,7 +129,7 @@ meter {
 }
 
 .text-preset-2 {
-  font-family: "Figtree";
+  font-family: "Figtree", sans-serif;
   font-size: var(--font-size-400);
   font-weight: var(--font-weight-500);
   letter-spacing: var(--letter-spacing-0);
@@ -131,7 +137,7 @@ meter {
 }
 
 .text-preset-3 {
-  font-family: "Figtree";
+  font-family: "Figtree", sans-serif;
   font-size: var(--font-size-350);
   font-weight: var(--font-weight-500);
   letter-spacing: var(--letter-spacing-0);
@@ -139,7 +145,7 @@ meter {
 }
 
 .text-preset-3-bold {
-  font-family: "Figtree";
+  font-family: "Figtree", sans-serif;
   font-size: var(--font-size-350);
   font-weight: var(--font-weight-800);
   letter-spacing: var(--letter-spacing-0);
@@ -147,7 +153,7 @@ meter {
 }
 
 h1 {
-  font-family: "Figtree";
+  font-family: "Figtree", sans-serif;
   font-size: var(--font-size-400);
   font-weight: var(--font-weight-500);
   letter-spacing: var(--letter-spacing-0);
@@ -155,7 +161,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Figtree";
+  font-family: "Figtree", sans-serif;
   font-size: var(--font-size-400);
   font-weight: var(--font-weight-500);
   letter-spacing: var(--letter-spacing-0);
@@ -163,7 +169,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Figtree";
+  font-family: "Figtree", sans-serif;
   font-size: var(--font-size-400);
   font-weight: var(--font-weight-500);
   letter-spacing: var(--letter-spacing-0);
@@ -171,7 +177,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Figtree";
+  font-family: "Figtree", sans-serif;
   font-size: var(--font-size-400);
   font-weight: var(--font-weight-500);
   letter-spacing: var(--letter-spacing-0);
@@ -179,7 +185,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Figtree";
+  font-family: "Figtree", sans-serif;
   font-size: var(--font-size-400);
   font-weight: var(--font-weight-500);
   letter-spacing: var(--letter-spacing-0);
@@ -187,7 +193,7 @@ h5 {
 }
 
 h6 {
-  font-family: "Figtree";
+  font-family: "Figtree", sans-serif;
   font-size: var(--font-size-400);
   font-weight: var(--font-weight-500);
   letter-spacing: var(--letter-spacing-0);
@@ -198,7 +204,7 @@ p,
 li,
 label,
 td {
-  font-family: "Figtree";
+  font-family: "Figtree", sans-serif;
   font-size: var(--font-size-400);
   font-weight: var(--font-weight-500);
   letter-spacing: var(--letter-spacing-0);
