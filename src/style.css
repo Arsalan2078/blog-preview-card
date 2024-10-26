@@ -1,0 +1,210 @@
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+a, button {
+  cursor: revert;
+}
+
+ol, ul, menu, summary {
+  list-style: none;
+}
+
+ol {
+  counter-reset: revert;
+}
+
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+textarea {
+  white-space: revert;
+}
+
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: unset;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+h1 {
+  font-family: inherit;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-400);
+  letter-spacing: var(--letter-spacing-000);
+  line-height: var(--line-height-200);
+}
+
+h2 {
+  font-family: inherit;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-400);
+  letter-spacing: var(--letter-spacing-000);
+  line-height: var(--line-height-200);
+}
+
+h3 {
+  font-family: inherit;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-400);
+  letter-spacing: var(--letter-spacing-000);
+  line-height: var(--line-height-200);
+}
+
+h4 {
+  font-family: inherit;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-400);
+  letter-spacing: var(--letter-spacing-000);
+  line-height: var(--line-height-200);
+}
+
+h5 {
+  font-family: inherit;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-400);
+  letter-spacing: var(--letter-spacing-000);
+  line-height: var(--line-height-200);
+}
+
+h6 {
+  font-family: inherit;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-400);
+  letter-spacing: var(--letter-spacing-000);
+  line-height: var(--line-height-200);
+}
+
+p,
+li,
+label,
+td {
+  font-family: inherit;
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-400);
+  letter-spacing: var(--letter-spacing-000);
+  line-height: var(--line-height-200);
+}
+
+:root {
+  --color-primary-yellow: hsl(60, 100%, 50%);
+  --color-primary-blue: hsl(240, 100%, 50%);
+  --color-neutral-: ;
+  --font-size-400: 1rem;
+  --font-weight-100: 100;
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+  --letter-spacing-0: 0px;
+  --letter-spacing-100: 1px;
+  --line-height-100: 100%;
+  --line-height-150: 150%;
+  --line-height-200: 200%;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --font-size-400: 1.1rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  :root {
+    --font-size-400: 1.2rem;
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: min(100% - 0rem, 90rem);
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+}
+
+/*# sourceMappingURL=style.css.map */

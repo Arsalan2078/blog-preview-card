@@ -1,0 +1,61 @@
+@use '../abstracts/breakpoints';
+@use '../abstracts/colors';
+@use '../abstracts/type';
+
+// breakpoints
+$breakpoint-tablet: map-get(breakpoints.$breakpoints, tablet);
+$breakpoint-desktop: map-get(breakpoints.$breakpoints, desktop);
+
+// colors
+$colors-primary: map-get(colors.$colors, primary);
+$colors-neutral: map-get(colors.$colors, neutral);
+
+// font-sizes
+$font-sizes-mobile: map-get(type.$font-sizes, mobile);
+$font-sizes-tablet: map-get(type.$font-sizes, tablet);
+$font-sizes-desktop: map-get(type.$font-sizes, desktop);
+
+// root & mobile root variables
+:root {
+  @each $key, $value in $colors-primary {
+    --color-primary-#{$key}: #{$value};
+  }  
+
+  @each $key, $value in $colors-neutral {
+    --color-neutral-#{$key}: #{$value};
+  }
+
+  @each $key, $value in $font-sizes-mobile {
+    --font-size-#{$key}: #{$value};
+  }
+
+  @each $key, $value in type.$font-weights {
+    --font-weight-#{$key}: #{$value};
+  }
+
+  @each $key, $value in type.$letter-spacings {
+    --letter-spacing-#{$key}: #{$value};
+  }
+
+  @each $key, $value in type.$line-heights {
+    --line-height-#{$key}: #{$value};
+  }
+}
+
+// tablet root variables
+@media screen and (min-width: $breakpoint-tablet) {
+  :root {
+    @each $key, $value in $font-sizes-tablet {
+      --font-size-#{$key}: #{$value};
+    }
+  }
+}
+
+// desktop root variables
+@media screen and (min-width: $breakpoint-desktop) {
+  :root {
+    @each $key, $value in $font-sizes-desktop {
+      --font-size-#{$key}: #{$value};
+    }
+  }
+}

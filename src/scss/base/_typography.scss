@@ -1,0 +1,32 @@
+@use '../abstracts/mixins';
+
+h1 {
+  @include mixins.set-font-styles();
+}
+
+h2 {
+  @include mixins.set-font-styles();
+}
+
+h3 {
+  @include mixins.set-font-styles();
+}
+
+h4 {
+  @include mixins.set-font-styles();
+}
+
+h5 {
+  @include mixins.set-font-styles();
+}
+
+h6 {
+  @include mixins.set-font-styles();
+}
+
+p,
+li,
+label,
+td {
+  @include mixins.set-font-styles();
+}
