@@ -1,0 +1,46 @@
+@use './abstracts/index' as abstracts;
+@use './base/index' as base;
+@use './utilities/index' as utilities;
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+}
+
+#root {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-yellow);
+}
+
+.blog-preview-card {
+  max-width: 24rem;
+  border: 1px solid var(--color-neutral-gray-950);
+  border-radius: 1.75rem;
+  box-shadow: 0.5rem 0.5rem var(--color-neutral-gray-950);
+
+  .blog-image {
+    border-radius: 0.625rem;
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+  }
+
+  .content {
+    .category {
+      border-radius: 0.25rem;
+    }
+  }
+
+  .author {
+    .author-pic {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// COLORS
+$color-groups: (
+  (
+    "prefix": "primary",
+    "values": (
+      "yellow": hsl(47 88% 63%),
+    )
+  ),
+  (
+    "prefix": "neutral",
+    "values": (
+      "gray-950": hsl(0 0% 7%),
+      "gray-500": hsl(0 0% 42%),
+      "white": hsl(0 0% 100%)
+    )
+  )
+);
