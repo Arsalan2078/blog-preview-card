@@ -6,7 +6,7 @@
   "homepage": "https://arsalan2078.github.io/blog-preview-card/",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build", 
+    "deploy": "gh-pages -d dist",
     "sass": "sass --watch src/scss/style.scss:src/style.css",
     "dev": "vite",
     "build": "tsc -b && vite build",
