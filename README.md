@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Arsalan2078/blog-preview-card)
-- Live Site URL: [Add live site URL here](https://arsalan2078.github.io/blog-preview-card/)
+- Solution URL: [Solution](https://github.com/Arsalan2078/blog-preview-card)
+- Live Site URL: [Live Site](https://arsalan2078.github.io/blog-preview-card/)
 
 ## My process
 
