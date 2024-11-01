@@ -1,0 +1,52 @@
+$font-stack: "Figtree", sans-serif !default;
+
+// FONT SIZES
+$font-sizes: (
+  "property": "font-size",
+  "prefix": "font-size",
+  "breakpoints": (
+    (
+      "breakpoint": "xs",
+      "values": (
+        "350": 0.750rem,
+        "400": 0.875rem,
+        "600": 1.25rem,
+      )
+    ),
+    (
+      "breakpoint": "sm",
+      "values": (
+        "350": 0.875rem,
+        "400": 1rem,
+        "600": 1.5rem,
+      )
+    )
+  ),
+) !default;
+
+
+// TYPE PROPERTIES (font weights, letter spacings, etc)
+$type-properties: (
+  (
+    "property": "font-weight",
+    "prefix": "font-weight",
+    "values": (
+      "500": 500,
+      "800": 800,
+    )
+  ),
+  (
+    "property": "letter-spacing",
+    "prefix": "letter-spacing",
+    "values": (
+      "0": 0px,   
+    )
+  ),
+  (
+    "property": "line-height",
+    "prefix": "line-height",
+    "values": (
+      "150": 150%,
+    )
+  )
+) !default;
